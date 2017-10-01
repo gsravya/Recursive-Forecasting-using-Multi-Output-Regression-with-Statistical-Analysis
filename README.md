@@ -1,0 +1,2 @@
+# Recursive-Forecasting-using-Multi-Output-Regression-with-Statistical-Analysis
+This project aims to forecast the Median Selling Price (MSP) of houses in MA and NY states for 2 months based on 70 months of data using time series analysis in Python. Statistical analysis is also performed to understand the influence of different features on the target label (MSP). The data is collected from Zillow website.
