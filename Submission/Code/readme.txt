@@ -1,23 +1,21 @@
-Problem: Forecast the Median Selling Price per square feet for 2 months in 14 steps, 7 steps in each month for two states MA and NY.
+# Problem #
+
+Forecast the Median Selling Price per square feet for 2 months in 14 steps, 7 steps in each month for two states MA and NY.
 
 
-How to run:
------------
-1. Unzip the 'Submission' folder and open 'Code' folder
-2. The python scripts 'MA_run_me.py' and NY_run_me.py' are for MA and NY respectively.
-3. Open terminal and go to the 'Code' folder and run the scripts by executing the following commands:
-        'python MA_run_me.py' and 'python NY_run_me.py'
+# How to run #
+1. The python scripts 'MA_run_me.py' and NY_run_me.py' are for MA and NY respectively.
+2. Open terminal and go to the 'Code' folder and run the scripts by executing the following commands:
+        `python MA_run_me.py` and `python NY_run_me.py`
    These two can be run simultaneously on two terminal windows.
    
-Dataset Description:
--------------------
+# Dataset Description #
 1. Each dataset ('MA_dataset.csv' and NY_dataset.csv') has 490 data cases with each data case having 10 features (described below) and the target
    value as Median Selling Price per sqft. (MSP).
 2. There are 7 values in each month which are dated as 5, 10, 15, 18, 20, 25 and 28. The data is for 70 months which range from October 2010 to 
    July 2016.
 
-Feature Information:
---------------------
+# Feature Information #
 The features that are considered in the raw dataset are the following:
 
 1. MLP ($) - Median List Pricing per sqft.
@@ -64,15 +62,13 @@ The features that are considered in the raw dataset are the following:
                   calculated on a scale from 0 to 10, with 0 representing the least healthy markets and 10 the healthiest markets.
     Type - continuous real float64 value
     
-Target Label MSP:
------------------
+# Target Label MSP #
 MSP - Median Selling Price
     Description - Median of the selling price for all homes sold in a given region divided by the square footage of a home.
     Type - continuous real float64 value
     
     
-Lag Features:
--------------
+# Lag Features #
 1. To do a time series forecast in which we don't have features for that period of time to predict for that same period, we need to consider lags,
    meaning the features for the current period will be the features and the target label from the previous n number of periods and this is called
    a lag. The optimal number of lags is determined and a new csv file 'MA_Lagged_data.csv' (same with NY) is formed with all the features lagged 
