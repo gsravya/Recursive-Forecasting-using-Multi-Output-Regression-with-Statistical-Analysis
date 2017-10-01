@@ -19,53 +19,49 @@ Forecast the Median Selling Price per square feet for 2 months in 14 steps, 7 st
 The features that are considered in the raw dataset are the following:
 
 1. MLP ($) - Median List Pricing per sqft.
-    Description - Median of the list price (or asking price) for homes listed on Zillow divided by the square footage of a home.
-    Type - continuous real float64 value
+   1. Description - Median of the list price (or asking price) for homes listed on Zillow divided by the square footage of a home.
+   2. Type - continuous real float64 value
     
 2. MPC (%) - Median Price Cut
-    Description - Median of the percentage price reduction for homes with a price reduction during the month.
-    Type - continuous real float64 value between 0 and 100
+   1. Description - Median of the percentage price reduction for homes with a price reduction during the month.
+   2. Type - continuous real float64 value between 0 and 100
 
 3. SFL (%) - Sold For Loss
-    Description - The percentage of homes in an area that sold for a price lower than the previous sale price.
-    Type - continuous real float64 value between 0 and 100
+   1. Description - The percentage of homes in an area that sold for a price lower than the previous sale price.
+   2. Type - continuous real float64 value between 0 and 100
     
 4. SFG (%) - Sold For Gain
-    Description - The percentage of homes in an area that sold for a price higher than the previous sale price.
-    Type - continuous real float64 value between 0 and 100
+   1. Description - The percentage of homes in an area that sold for a price higher than the previous sale price.
+   2. Type - continuous real float64 value between 0 and 100
     
 5. IV (%) - Increasing Values
-    Description - The percentage of homes in an given region with values that have increased in the past year.
-    Type - continuous real float64 value between 0 and 100
+   1. Description - The percentage of homes in an given region with values that have increased in the past year.
+   2. Type - continuous real float64 value between 0 and 100
     
 6. DV (%) - Decreasing Values
-    Description - The percentage of homes in an given region with values that have decreased in the past year.
-    Type - continuous real float64 value between 0 and 100
+   1. Description - The percentage of homes in an given region with values that have decreased in the past year.
+   2. Type - continuous real float64 value between 0 and 100
     
 7. TNV (%) - Turnover
-    Description - The percentage of all homes in a given area that sold in the past 12 months.
-    Type - continuous real float64 value between 0 and 100
+   1. Description - The percentage of all homes in a given area that sold in the past 12 months.
+   2. Type - continuous real float64 value between 0 and 100
     
 8. BSI - Buyer Seller Index
-    Description - This index combines the sale-to-list price ratio, the percent of homes that subject to a price cut and the time properties spend 
-                  on the market (measured as Days on Zillow). Higher numbers indicate a better buyers’ market, lower numbers indicate a better 
-                  sellers’ market, relative to other markets within a metro.
-    Type - continuous real float64 value
+   1. Description - This index combines the sale-to-list price ratio, the percent of homes that subject to a price cut and the time properties spend on the market (measured as Days on Zillow). Higher numbers indicate a better buyers’ market, lower numbers indicate a better sellers’ market, relative to other markets within a metro.
+   2. Type - continuous real float64 value
 
 9. PTR - Price To Rent Ratio
-    Description - This ratio is first calculated at the individual home level, where the estimated home value is divided by 12 times its 
-                  estimated monthly rent price. The the median of all home-level price-to-rent ratios for a given region is then calculated.
-    Type - continuous real float64 value
+   1. Description - This ratio is first calculated at the individual home level, where the estimated home value is divided by 12 times its estimated monthly rent price. The the median of all home-level price-to-rent ratios for a given region is then calculated.
+   2. Type - continuous real float64 value
     
 10. MHI - Market Health Index
-    Description - This index indicates the current health of a given region’s housing market relative to other markets nationwide. It is 
-                  calculated on a scale from 0 to 10, with 0 representing the least healthy markets and 10 the healthiest markets.
-    Type - continuous real float64 value
+   1. Description - This index indicates the current health of a given region’s housing market relative to other markets nationwide. It is calculated on a scale from 0 to 10, with 0 representing the least healthy markets and 10 the healthiest markets.
+   2. Type - continuous real float64 value
     
 # Target Label MSP #
 MSP - Median Selling Price
-    Description - Median of the selling price for all homes sold in a given region divided by the square footage of a home.
-    Type - continuous real float64 value
+   1. Description - Median of the selling price for all homes sold in a given region divided by the square footage of a home.
+   2. Type - continuous real float64 value
     
     
 # Lag Features #
