@@ -77,4 +77,5 @@ MSP - Median Selling Price
 3. PCA is performed to find the 14 best features and a new csv is formed with the optimal features 'MA_New_Lagged_data.csv'. So, this file has 
    481 data cases with 14 features.
     
-                  
+# Results #
+ The MSP values for 2 months are forecasted and average RMSE for MA state is calculated as 35.2 whereas for NY state, it is 25.76.
